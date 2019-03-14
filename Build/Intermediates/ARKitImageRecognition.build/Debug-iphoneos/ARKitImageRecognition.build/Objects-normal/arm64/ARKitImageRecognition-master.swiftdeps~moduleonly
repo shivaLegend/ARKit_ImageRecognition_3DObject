@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "1702d0f84f9b7f507de57bcd5c54b9f8"
+build_time: [1552536825, 628172000]
+inputs:
+  "/Users/nguyenductai/Desktop/doan/ARKitImageRecognition/ViewController.swift": [1552536809, 0]
+  "/Users/nguyenductai/Desktop/doan/ARKitImageRecognition/AppDelegate.swift": [1523363180, 0]
