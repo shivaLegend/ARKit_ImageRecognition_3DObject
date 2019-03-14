@@ -55,6 +55,7 @@ class ViewController: UIViewController {
             let node = scene.rootNode.childNode(withName: "book", recursively: false) else { return SCNNode() }
         let scaleFactor  = 0.1
         node.scale = SCNVector3(scaleFactor, scaleFactor, scaleFactor)
+        node.eulerAngles.x = +.pi/2
         return node
     }()
     
@@ -248,9 +249,9 @@ extension ViewController: ARSCNViewDelegate {
             self.isSceneMumhammed = true
           } else {
             let overlayNode = self.getNode(withImageName: imageName)
-            overlayNode.opacity = 0
+//            overlayNode.opacity = 0
             overlayNode.position.y = 0.05
-            overlayNode.runAction(self.fadeAndSpinAction)
+//            overlayNode.runAction(self.fadeAndSpinAction)
             node.addChildNode(overlayNode)
             self.isSceneMumhammed = false
           }
